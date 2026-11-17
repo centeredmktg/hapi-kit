@@ -1,11 +1,7 @@
 ---
 name: competitive-displacement
-description: Use when a prospect is already using a competitor or has a DIY
-solution in place and you need to surface the gaps without trashing what
-they're using. Produces diagnostic questions that reveal whether the gaps
-are costing them, and a ready-to-send reply for "our current solution works
-fine." Has a DIY mode for "we'll just build it" / "I can do that myself."
-Complements /objection-handler for the need-type objection.
+description: >-
+  Use when a prospect is already using a competitor or has a DIY solution in place and you need to surface the gaps without trashing what they're using. Produces diagnostic questions that reveal whether the gaps are costing them, and a ready-to-send reply for "our current solution works fine." Has a DIY mode for "we'll just build it" / "I can do that myself." Complements /objection-handler for the need-type objection.
 ---
 
 # /competitive-displacement — Competitive Displacement Framework

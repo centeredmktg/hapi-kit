@@ -1,0 +1,8 @@
+{
+  "name": "hapi-kit",
+  "owner": { "name": "Danny Cox" },
+  "description": "Private skill kit for embedded B2B marketing work.",
+  "plugins": [
+    { "name": "hapi-kit", "source": "./", "description": "Embedded-marketer skill kit" }
+  ]
+}

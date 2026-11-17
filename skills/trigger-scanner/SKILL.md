@@ -1,10 +1,7 @@
 ---
 name: trigger-scanner
-description: Use before drafting outreach for a named prospect or company.
-Scans for active buying signals across 37 trigger categories — company growth,
-personnel changes, competitive signals, intent signals, and event signals.
-Surfaces the top firing triggers and produces prioritized outreach hooks with
-timing recommendation per trigger. Run after /intel, feeds /draft-cold-email.
+description: >-
+  Use before drafting outreach for a named prospect or company. Scans for active buying signals across 37 trigger categories — company growth, personnel changes, competitive signals, intent signals, and event signals. Surfaces the top firing triggers and produces prioritized outreach hooks with timing recommendation per trigger. Run after /intel, feeds /draft-cold-email.
 ---
 
 # /trigger-scanner — Sales Trigger & Buying Signal Scanner

@@ -1,9 +1,7 @@
 ---
 name: roi-business-case
-description: Use when a client or operator needs to justify a major investment
-to a CFO, board, or executive team. Works for AI tools, software platforms,
-service deployments, operational infrastructure, or any significant capex
-decision. Produces a board-ready financial model.
+description: >-
+  Use when a client or operator needs to justify a major investment to a CFO, board, or executive team. Works for AI tools, software platforms, service deployments, operational infrastructure, or any significant capex decision. Produces a board-ready financial model.
 ---
 
 # /roi-business-case — Investment Business Case Builder

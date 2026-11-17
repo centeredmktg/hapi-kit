@@ -1,9 +1,7 @@
 ---
 name: objection-handler
-description: Use when a prospect pushes back and you need a calibrated reply.
-Handles the five resistance types that kill most deals: Price, Timing,
-Trust/Credibility, Need, and Authority. Paste the prospect's exact words —
-do not paraphrase. Generic inputs produce generic replies.
+description: >-
+  Use when a prospect pushes back and you need a calibrated reply. Handles the five resistance types that kill most deals: Price, Timing, Trust/Credibility, Need, and Authority. Paste the prospect's exact words — do not paraphrase. Generic inputs produce generic replies.
 ---
 
 # /objection-handler — Sales Objection Response

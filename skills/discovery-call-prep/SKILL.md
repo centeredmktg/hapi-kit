@@ -1,10 +1,7 @@
 ---
 name: discovery-call-prep
-description: Use before a discovery or sales call to generate diagnostic
-questions for a specific prospect. Produces questions that surface the cost
-of the problem, reveal frustrations with their current solution, and get
-them to articulate the consequence of inaction. Run after /intel for best
-results. Not a question bank — outputs for a named prospect and context.
+description: >-
+  Use before a discovery or sales call to generate diagnostic questions for a specific prospect. Produces questions that surface the cost of the problem, reveal frustrations with their current solution, and get them to articulate the consequence of inaction. Run after /intel for best results. Not a question bank — outputs for a named prospect and context.
 ---
 
 # /discovery-call-prep — Pre-Call Diagnostic Question Generator

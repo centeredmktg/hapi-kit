@@ -1,9 +1,7 @@
 ---
 name: build-vs-buy-page
-description: Use when drafting a /vs/diy, /vs/build-in-house, or "build vs. buy"
-page for a company whose buyers ask "couldn't we just build this?" Treats DIY as
-a competitor in the /vs/ section. Pulls numbers from /build-vs-buy and the talk
-track from /competitive-displacement DIY Mode so page and sales stay aligned.
+description: >-
+  Use when drafting a /vs/diy, /vs/build-in-house, or "build vs. buy" page for a company whose buyers ask "couldn't we just build this?" Treats DIY as a competitor in the /vs/ section. Pulls numbers from /build-vs-buy and the talk track from /competitive-displacement DIY Mode so page and sales stay aligned.
 ---
 
 # /build-vs-buy-page — DIY Is a Competitor

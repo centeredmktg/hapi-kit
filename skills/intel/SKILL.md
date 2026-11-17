@@ -1,3 +1,9 @@
+---
+name: intel
+description: >-
+  Use when researching a company before outreach, a call, or account planning. Produces a structured intelligence brief: positioning, offer, signals, incentive structure, and where narrative and operations disagree.
+---
+
 # /intel — Company Intelligence Agent
 
 ## Context Check
