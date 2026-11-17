@@ -167,8 +167,8 @@ next one. This is for how it gets built; for what they want, get them
 describing first.
 
 **Show, don't tell.** Whenever seeing would help more than reading,
-sketch it in text: a few lines of what they'd see. Offer the visual
-companion (below) when the look itself is theirs to decide:
+sketch it in text: a few lines of what they'd see. Do this especially
+when the look itself is theirs to decide:
 
 - something they'll look at: a screen, a page, a printout, a sign
 - a layout or arrangement: of a screen, a room, a schedule
@@ -202,9 +202,7 @@ or missing.
 Before you send a chunk, check it: does it describe something they'll
 look at, like a page, a screen, a schedule, or a printout? If so, put a
 text sketch next to the description. If the look itself is theirs to
-decide and they haven't seen the visual companion offer yet, send the
-offer instead (its own message, below) and hold the chunk for the next
-message. Once they've accepted, put a mockup next to the description.
+decide, make the sketch detailed enough that they can react to it.
 
 ## Size the Work
 
@@ -293,24 +291,3 @@ hapi-kit:writing-plans and no other skill.
 | "They said 'sounds good' to the idea" | Approval covers what you showed them. A design doc you haven't written isn't approved. |
 | "The spike works, I'll keep building on it" | Keeping it is a new request. Back through the gate. |
 
-## Visual Companion
-
-A browser tab for showing mockups, diagrams, and prototypes. It's a
-tool, not a mode: accepting it doesn't send every question to the
-browser.
-
-**Offer it just-in-time.** Offer it the first time one of the moments
-above comes up, never upfront. The offer is its own message with nothing
-else in it:
-
-> "This might be easier if I show you. Want me to open a browser tab with some mockups?"
-
-If they decline, stay in text and don't offer again unless they raise it.
-
-**Per question, ask: would they understand this better by seeing it?**
-Mockups, layouts, diagrams, and side-by-side designs go in the browser.
-Requirements, scope, tradeoffs, and conceptual choices stay in text. A
-question about a UI topic isn't automatically a visual question.
-
-If they accept, read `visual-companion.md` in this directory before
-starting the server.
