@@ -20,12 +20,12 @@ The 18 originals are Danny Cox's prior inventions, listed on Schedule B of his e
 Install into a company workspace from a pinned tag, so what's in use matches what was disclosed:
 
 ```bash
-git clone --branch v1.1.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
+git clone --branch v1.2.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
 claude plugin marketplace add ~/hapi-kit   # or point a local marketplace at it
 claude plugin install hapi-kit
 ```
 
-Then copy `workspace-template/` into the company-owned workspace repo and fill in `CLAUDE.md` and `context/company.md`. The skills read `context/`, write to `outputs/`, and the session close writes to `worklog/`.
+Then copy `workspace-template/` into the company-owned workspace repo and fill in `CLAUDE.md` and `context/company.md`. Copy `profile/about-danny.md` into that repo as `about-me.md`; the template CLAUDE.md imports it, so every session starts with it. The skills read `context/`, write to `outputs/`, and the session close writes to `worklog/`.
 
 ## Building infrastructure
 

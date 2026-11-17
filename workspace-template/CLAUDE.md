@@ -2,6 +2,8 @@
 
 <!-- Company-owned. Lives in the company's repo, not in hapi-kit. -->
 
+@about-me.md
+
 ## Company
 <!-- What the company sells, to whom, and the one-line positioning. Details in context/company.md -->
 
