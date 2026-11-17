@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.0.0 (2026-11-16)
+# Manifest — hapi-kit v1.1.0 (2026-11-16)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -22,3 +22,12 @@ Prior inventions disclosed for use in company work. Each was developed before em
 | weekly-gtm-review | Weekly go-to-market review and synthesis |
 | pipeline-stage-velocity-analyzer | Analyze pipeline stage conversion and velocity |
 | ok-i-love-you-goodbye | Session close: append a work log entry; weekly rollup |
+
+## Third-party (not prior inventions)
+
+Public open-source skills, vendored with their MIT license. Listed so the inventory is complete; they are not claimed as Danny Cox's work.
+
+| Skill | Source | Purpose |
+|---|---|---|
+| brainstorming | superpowers v7.0.2 (MIT) | Turn an idea into an approved design before building |
+| writing-plans | superpowers v7.0.2 (MIT) | Turn an approved design into a task-by-task implementation plan |

@@ -1,8 +1,8 @@
 # hapi-kit
 
-A Claude Code plugin with 18 skills for an embedded B2B marketer: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.
+A Claude Code plugin with 20 skills (18 original, 2 vendored MIT) for an embedded B2B marketer: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.
 
-These are Danny Cox's prior inventions, listed on Schedule B of his employee agreement. Bringing them into company work grants the company a non-exclusive license to use them as incorporated (clause (c)). Ownership stays with Danny.
+The 18 originals are Danny Cox's prior inventions, listed on Schedule B of his employee agreement. Bringing them into company work grants the company a non-exclusive license to use them as incorporated (clause (c)). Ownership stays with Danny.
 
 ## The boundary (read before adding anything)
 
@@ -20,15 +20,19 @@ These are Danny Cox's prior inventions, listed on Schedule B of his employee agr
 Install into a company workspace from a pinned tag, so what's in use matches what was disclosed:
 
 ```bash
-git clone --branch v1.0.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
+git clone --branch v1.1.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
 claude plugin marketplace add ~/hapi-kit   # or point a local marketplace at it
 claude plugin install hapi-kit
 ```
 
 Then copy `workspace-template/` into the company-owned workspace repo and fill in `CLAUDE.md` and `context/company.md`. The skills read `context/`, write to `outputs/`, and the session close writes to `worklog/`.
 
+## Building infrastructure
+
+`brainstorming` → `writing-plans` covers design and planning. For execution (TDD, debugging, subagent-driven builds), install the public superpowers plugin at project scope in the company workspace: `claude plugin install superpowers@claude-plugins-official --scope project`. It's public open source, so it needs no disclosure. Its session-start hook adds roughly 2K tokens to every session, so turn it on only in repos where you build.
+
 ## Token notes
 
-- At rest, each skill costs only its description, about 1–1.5K tokens total for 18 skills.
+- At rest, each skill costs only its description, about 1.5K tokens total for 20 skills.
 - When a skill runs, its body loads: about 500–1,400 words. `humanizer` loads its full 4K-word pattern catalog only for long documents.
 - `/ok-i-love-you-goodbye` here is the lite version: one appended worklog entry and nothing else.

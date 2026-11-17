@@ -1,0 +1,1 @@
+Source: superpowers v7.0.2 (MIT), claude-plugins-official marketplace. Vendored 2026-11-16 unchanged except: skill cross-refs renamed to hapi-kit:, plan/spec paths moved from docs/superpowers/ to docs/, and (writing-plans) a note on where execution skills come from. LICENSE retained as MIT requires.
