@@ -1,5 +1,5 @@
 ---
-name: ICP Developer
+name: icp-developer
 description: >-
   This skill should be used when the user wants to "develop an ICP", "define ideal customer profile", "figure out who we're targeting", "build a customer profile", "identify our best customer", or needs to establish positioning before building campaigns, content, or outreach. Produces a single synthesized ICP statement from a structured 10-question intake. Optional outreach activation step adds LinkedIn-signal criteria, trigger events, and hard disqualifier.
 ---

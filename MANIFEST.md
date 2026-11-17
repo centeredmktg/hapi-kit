@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.2.0 (2026-11-16)
+# Manifest — hapi-kit v1.3.0 (2026-11-17)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -23,11 +23,11 @@ Prior inventions disclosed for use in company work. Each was developed before em
 | pipeline-stage-velocity-analyzer | Analyze pipeline stage conversion and velocity |
 | ok-i-love-you-goodbye | Session close: append a work log entry; weekly rollup |
 
-## Third-party (not prior inventions)
+## Public plugins referenced (not prior inventions)
 
-Public open-source skills, vendored with their MIT license. Listed so the inventory is complete; they are not claimed as Danny Cox's work.
+Not part of this kit's code. The catalog points at their public repositories so they install from the original source. Listed so the inventory is complete.
 
-| Skill | Source | Purpose |
-|---|---|---|
-| brainstorming | superpowers v7.0.2 (MIT) | Turn an idea into an approved design before building |
-| writing-plans | superpowers v7.0.2 (MIT) | Turn an approved design into a task-by-task implementation plan |
+| Plugin | Source | License | Purpose |
+|---|---|---|---|
+| superpowers | github.com/obra/superpowers @ v7.0.2 | MIT | Design, planning and build discipline |
+| claude-seo (listed as seo-suite) | github.com/AgriciDaniel/claude-seo @ v2.4.2 | MIT | SEO, AEO and AI-search audits |

@@ -1,8 +1,36 @@
 {
   "name": "hapi-kit",
-  "owner": { "name": "Danny Cox" },
+  "owner": {
+    "name": "Danny Cox"
+  },
   "description": "Private skill kit for embedded B2B marketing work.",
   "plugins": [
-    { "name": "hapi-kit", "source": "./", "description": "Embedded-marketer skill kit" }
+    {
+      "name": "hapi-kit",
+      "source": "./",
+      "description": "Embedded-marketer skill kit (original skills)"
+    },
+    {
+      "name": "superpowers",
+      "description": "Public, MIT. Brainstorming, plan writing, plan execution, TDD, debugging. Pulled from upstream, pinned to v7.0.2.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/obra/superpowers.git",
+        "sha": "22f0b463e7a5e579904dd6211a520321035526f7"
+      },
+      "homepage": "https://github.com/obra/superpowers"
+    },
+    {
+      "name": "seo-suite",
+      "description": "Public, MIT. SEO, AEO and AI-search audits. Pulled from upstream, pinned to v2.4.2.",
+      "category": "marketing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AgriciDaniel/claude-seo.git",
+        "sha": "4b99de2f7de7e7d5247042e5fb5b4ea9368ef734"
+      },
+      "homepage": "https://github.com/AgriciDaniel/claude-seo"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-name: Value Prop Researcher
+name: value-prop-researcher
 description: This skill should be used when the user asks to "research a company's value prop", "map a website", "analyze what [company] sells", "deep dive a prospect's site", "extract value props from [URL]", or wants a structured breakdown of a company's products, features, benefits, personas, and differentiators from their website. 3-part stateful workflow with approval gates.
 ---
 

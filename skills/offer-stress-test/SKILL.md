@@ -1,5 +1,5 @@
 ---
-name: Offer Stress Test
+name: offer-stress-test
 description: This skill should be used when the user wants to "stress test an offer", "find objections to my pitch", "pressure test my positioning", "role-play as my ideal customer", "find weaknesses in my offer", or wants to hear every objection before taking an offer to market. Requires an ICP and offer description as input.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Pain Point Hierarchy
+name: pain-point-hierarchy
 description: This skill should be used when the user wants to "map pain points", "identify what keeps the ICP up at night", "build a pain point list", "rank customer problems", or needs to understand the emotional urgency behind an ICP's problems before writing copy, building campaigns, or stress-testing an offer. Requires an ICP as input.
 ---
 

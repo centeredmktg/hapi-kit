@@ -1,8 +1,8 @@
 # hapi-kit
 
-A Claude Code plugin with 20 skills (18 original, 2 vendored MIT) for an embedded B2B marketer: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.
+A Claude Code plugin catalog: one plugin of 18 original skills, plus pinned references to two public plugins, for an embedded B2B marketer: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.
 
-The 18 originals are Danny Cox's prior inventions, listed on Schedule B of his employee agreement. Bringing them into company work grants the company a non-exclusive license to use them as incorporated (clause (c)). Ownership stays with Danny.
+The 18 original skills are Danny Cox's prior inventions, listed on Schedule B of his employee agreement. Bringing them into company work grants the company a non-exclusive license to use them as incorporated (clause (c)). Ownership stays with Danny.
 
 ## The boundary (read before adding anything)
 
@@ -20,19 +20,34 @@ The 18 originals are Danny Cox's prior inventions, listed on Schedule B of his e
 Install into a company workspace from a pinned tag, so what's in use matches what was disclosed:
 
 ```bash
-git clone --branch v1.2.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
-claude plugin marketplace add ~/hapi-kit   # or point a local marketplace at it
-claude plugin install hapi-kit
+git clone --branch v1.3.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
+claude plugin marketplace add ~/hapi-kit
+claude plugin install hapi-kit@hapi-kit                        # the 18 originals, user scope
+claude plugin install superpowers@hapi-kit --scope project     # only in repos where you build
+claude plugin install seo-suite@hapi-kit --scope project       # only in a site/SEO repo
 ```
+
+## Public plugins (pulled from upstream)
+
+`superpowers` and `seo-suite` aren't copied into this repo. The catalog points at each upstream GitHub repo, pinned to a commit that has been reviewed:
+
+| Entry | Upstream | Pinned | Always-on cost |
+|---|---|---|---|
+| superpowers | github.com/obra/superpowers | v7.0.2 · 22f0b46 | ~2K tokens/session (session-start hook) plus skill list |
+| seo-suite | github.com/AgriciDaniel/claude-seo (listed as seo-suite because names starting with "claude-" are reserved) | v2.4.2 · 4b99de2 | ~4.5K tokens/session |
+
+To upgrade one: read the upstream diff since the pinned commit, then bump the `sha` in `.claude-plugin/marketplace.json` and tag a new version. Never point at a branch, because an unpinned upstream can change what runs on a company machine without anyone looking.
+
+Known issue in superpowers 7.0.2: the brainstorming "visual companion" (an optional local mockup server) had two medium findings in security review, a token-file reuse and a predictable /tmp path. Decline the offer to open a browser tab, or review upstream for a fix before using it.
 
 Then copy `workspace-template/` into the company-owned workspace repo and fill in `CLAUDE.md` and `context/company.md`. Copy `profile/about-danny.md` into that repo as `about-me.md`; the template CLAUDE.md imports it, so every session starts with it. The skills read `context/`, write to `outputs/`, and the session close writes to `worklog/`.
 
 ## Building infrastructure
 
-`brainstorming` → `writing-plans` covers design and planning. For execution (TDD, debugging, subagent-driven builds), install the public superpowers plugin at project scope in the company workspace: `claude plugin install superpowers@claude-plugins-official --scope project`. It's public open source, so it needs no disclosure. Its session-start hook adds roughly 2K tokens to every session, so turn it on only in repos where you build.
+Use superpowers at project scope in the company's build repos: `brainstorming` → `writing-plans` → `executing-plans`, with TDD and systematic debugging alongside.
 
 ## Token notes
 
-- At rest, each skill costs only its description, about 1.5K tokens total for 20 skills.
+- At rest, each skill costs only its description, about 1.3K tokens total for the 18 skills.
 - When a skill runs, its body loads: about 500–1,400 words. `humanizer` loads its full 4K-word pattern catalog only for long documents.
 - `/ok-i-love-you-goodbye` here is the lite version: one appended worklog entry and nothing else.
