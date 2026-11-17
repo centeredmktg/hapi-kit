@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.1.0 (2026-11-16)
+# Manifest — hapi-kit v1.2.0 (2026-11-16)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
