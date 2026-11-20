@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.3.0 (2026-11-17)
+# Manifest — hapi-kit v1.4.0 (2026-11-20)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -22,6 +22,16 @@ Prior inventions disclosed for use in company work. Each was developed before em
 | weekly-gtm-review | Weekly go-to-market review and synthesis |
 | pipeline-stage-velocity-analyzer | Analyze pipeline stage conversion and velocity |
 | ok-i-love-you-goodbye | Session close: append a work log entry; weekly rollup |
+
+## Added after employment start
+
+Built on personal equipment, generic to any company (no company data, names or configuration). Ownership stays with Danny; the company gets the same non-exclusive license to use them as incorporated. Disclosed to the company before first use in company work.
+
+| Skill | Added | Purpose |
+|---|---|---|
+| cms-content-qa | 2026-11-20 | Rule-based content QA for CMS sites (sitemap crawl or Webflow Data API): empty titles/descriptions, thin bodies, placeholders, duplicates, required fields |
+| content-brief | 2026-11-20 | One-page content brief: job, type, target query, existing-page check, proof, links, people |
+| content-draft | 2026-11-20 | Draft from an approved brief with CMS fields and a pre-publish checklist; saves CMS drafts only, never publishes |
 
 ## Public plugins referenced (not prior inventions)
 
