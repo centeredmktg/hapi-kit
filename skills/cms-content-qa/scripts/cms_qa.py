@@ -23,6 +23,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urlparse
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
@@ -42,6 +43,22 @@ def _ssl_context():
 
 
 SSL_CTX = _ssl_context()
+
+
+def _site_host(h):
+    return (h or "").lower().removeprefix("www.")
+
+
+class SameHostRedirects(urllib.request.HTTPRedirectHandler):
+    """Follow redirects only within the starting host (www and apex count as one)."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        new = urlparse(newurl)
+        if new.scheme not in ("http", "https") or _site_host(new.hostname) != _site_host(urlparse(req.full_url).hostname):
+            raise urllib.error.HTTPError(newurl, code, f"refused cross-host redirect to {newurl}", headers, fp)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+OPENER = urllib.request.build_opener(urllib.request.HTTPSHandler(context=SSL_CTX), SameHostRedirects)
 BAD_SLUG = re.compile(r"(-\d+$|-[0-9a-f]{5}$|---|draft|copy|test)", re.I)
 PLACEHOLDER = re.compile(r"(lorem ipsum|bibendum|consectetur adipiscing|meta title:|author 1\b|\bTBD\b|\bTODO\b|\[insert)", re.I)
 
@@ -68,7 +85,7 @@ def fetch(url, headers=None, retries=3, timeout=25):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
-            with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as r:
+            with OPENER.open(req, timeout=timeout) as r:
                 return r.status, r.read().decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
@@ -134,6 +151,12 @@ def run_sitemap(args, cfg):
     if not xml:
         sys.exit(f"Could not read sitemap ({status})")
     urls = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml)
+    # The sitemap is untrusted input: only fetch http(s) URLs on the site being checked.
+    host = _site_host(urlparse(args.base).hostname)
+    kept = [u for u in urls if urlparse(u).scheme in ("http", "https") and _site_host(urlparse(u).hostname) == host]
+    if len(kept) < len(urls):
+        print(f"Skipped {len(urls) - len(kept)} sitemap URLs that are not on {host}.", file=sys.stderr)
+    urls = kept
     if args.include:
         urls = [u for u in urls if any(p in u for p in args.include)]
     if args.limit:
