@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.4.0 (2026-11-20)
+# Manifest — hapi-kit v1.5.0 (2026-11-20)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -25,13 +25,14 @@ Prior inventions disclosed for use in company work. Each was developed before em
 
 ## Added after employment start
 
-Built on personal equipment, generic to any company (no company data, names or configuration). Ownership stays with Danny; the company gets the same non-exclusive license to use them as incorporated. Disclosed to the company before first use in company work.
+Added to the kit after the employment start date. Built on personal equipment, generic to any company (no company data, names or configuration). Ownership stays with Danny; the company gets the same non-exclusive license to use them as incorporated. Listed here so the inventory is complete.
 
 | Skill | Added | Purpose |
 |---|---|---|
 | cms-content-qa | 2026-11-20 | Rule-based content QA for CMS sites (sitemap crawl or Webflow Data API): empty titles/descriptions, thin bodies, placeholders, duplicates, required fields |
 | content-brief | 2026-11-20 | One-page content brief: job, type, target query, existing-page check, proof, links, people |
 | content-draft | 2026-11-20 | Draft from an approved brief with CMS fields and a pre-publish checklist; saves CMS drafts only, never publishes |
+| kung-fu | 2026-11-20 | Capability ingestion: extract capabilities from a resource, diff against the workspace, route to skill/framework/script with approval gates. Generic version of a personal tool created 2026-03-23; writes only into the company workspace |
 
 ## Public plugins referenced (not prior inventions)
 
