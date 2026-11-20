@@ -20,7 +20,7 @@ The 18 original skills are Danny Cox's prior inventions, listed on Schedule B of
 Install into a company workspace from a pinned tag, so what's in use matches what was disclosed:
 
 ```bash
-git clone --branch v1.3.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
+git clone --branch v1.4.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
 claude plugin marketplace add ~/hapi-kit
 claude plugin install hapi-kit@hapi-kit                        # the 18 originals, user scope
 claude plugin install superpowers@hapi-kit --scope project     # only in repos where you build
@@ -48,6 +48,6 @@ Use superpowers at project scope in the company's build repos: `brainstorming` â
 
 ## Token notes
 
-- At rest, each skill costs only its description, about 1.3K tokens total for the 18 skills.
+- At rest, each skill costs only its description, about 1.6K tokens total for the 21 skills.
 - When a skill runs, its body loads: about 500â€“1,400 words. `humanizer` loads its full 4K-word pattern catalog only for long documents.
 - `/ok-i-love-you-goodbye` here is the lite version: one appended worklog entry and nothing else.

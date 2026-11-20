@@ -1,13 +1,16 @@
 {
   "name": "hapi-kit",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Embedded-marketer skill kit: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.",
   "author": {
     "name": "Danny Cox"
   },
   "skills": [
     "./skills/build-vs-buy-page",
+    "./skills/cms-content-qa",
     "./skills/competitive-displacement",
+    "./skills/content-brief",
+    "./skills/content-draft",
     "./skills/discovery-call-prep",
     "./skills/fact-check",
     "./skills/humanizer",
