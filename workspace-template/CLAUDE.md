@@ -16,4 +16,5 @@
 ## Rules
 - Skills read `context/`, write to `outputs/YYYY-MM-DD-*.md`, and log to `worklog/`.
 - Never put customer data in prompts beyond what the task needs.
+- Learning goes into this workspace: run /kung-fu on a resource to add capabilities. Workspace skills live in `.claude/skills/`, frameworks in `context/frameworks/`, the registry in `context/capabilities.yaml`. Installed plugins are read-only.
 - Close sessions with /ok-i-love-you-goodbye when something shipped.
