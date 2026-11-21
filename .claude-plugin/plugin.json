@@ -1,7 +1,7 @@
 {
   "name": "hapi-kit",
-  "version": "1.5.0",
-  "description": "Embedded-marketer skill kit: messaging, ABM, sales enablement, content QA, weekly review, and a lightweight session worklog.",
+  "version": "1.6.0",
+  "description": "Embedded-marketer skill kit: messaging, ABM, sales enablement, content QA, weekly review, developer checks (security, pre-commit, doc review, site launch), and a lightweight session worklog.",
   "author": {
     "name": "Danny Cox"
   },
@@ -13,6 +13,7 @@
     "./skills/content-draft",
     "./skills/discovery-call-prep",
     "./skills/fact-check",
+    "./skills/goldfish-review",
     "./skills/humanizer",
     "./skills/icp-developer",
     "./skills/intel",
@@ -25,6 +26,9 @@
     "./skills/pain-point-hierarchy",
     "./skills/pipeline-stage-velocity-analyzer",
     "./skills/roi-business-case",
+    "./skills/security-audit",
+    "./skills/setup-pre-commit",
+    "./skills/site-launch-qa",
     "./skills/trigger-scanner",
     "./skills/value-prop-researcher",
     "./skills/weekly-gtm-review"
