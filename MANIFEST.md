@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.5.0 (2026-11-20)
+# Manifest — hapi-kit v1.6.0 (2026-11-20)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -33,6 +33,24 @@ Added to the kit after the employment start date. Built on personal equipment, g
 | content-brief | 2026-11-20 | One-page content brief: job, type, target query, existing-page check, proof, links, people |
 | content-draft | 2026-11-20 | Draft from an approved brief with CMS fields and a pre-publish checklist; saves CMS drafts only, never publishes |
 | kung-fu | 2026-11-20 | Capability ingestion: extract capabilities from a resource, diff against the workspace, route to skill/framework/script with approval gates. Generic version of a personal tool created 2026-03-23; writes only into the company workspace |
+
+## Created before employment start, added to the kit later
+
+Built on personal equipment and time before the employment start date (2026-11-16), but not listed on Schedule B. Generic to any company. Ownership stays with Danny; the company gets the same non-exclusive license as the rest of the kit. Dates are from the personal repo history (site-launch-qa: file date, committed 2026-11-20).
+
+| Skill | Created | Added to kit | Purpose |
+|---|---|---|---|
+| setup-pre-commit | 2026-11-09 | 2026-11-20 | Add a pre-commit gate (Husky + lint-staged) so commits that fail typecheck or tests are blocked |
+| goldfish-review | 2026-11-09 | 2026-11-20 | Review a spec, plan or proposal with fresh-context reviewer subagents, then resolve findings |
+| site-launch-qa | 2026-11-12 | 2026-11-20 | Launch gate for moving a site from staging to production or switching domains/DNS |
+
+## Third-party skills included (not prior inventions)
+
+Copied into the kit under their own license. The license file ships in the skill folder.
+
+| Skill | Source | License | Purpose |
+|---|---|---|---|
+| security-audit | Cloudflare, Inc. | MIT (`skills/security-audit/LICENSE`) | Security guidance, focused reviews and full codebase audits |
 
 ## Public plugins referenced (not prior inventions)
 
