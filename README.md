@@ -20,7 +20,7 @@ The 18 original skills are Danny Cox's prior inventions, listed on Schedule B of
 Install into a company workspace from a pinned tag, so what's in use matches what was disclosed:
 
 ```bash
-git clone --branch v1.6.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
+git clone --branch v1.7.0 git@github.com:centeredmktg/hapi-kit.git ~/hapi-kit
 claude plugin marketplace add ~/hapi-kit
 claude plugin install hapi-kit@hapi-kit                        # all kit skills, user scope
 claude plugin install superpowers@hapi-kit --scope project     # only in repos where you build
