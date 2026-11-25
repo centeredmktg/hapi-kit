@@ -1,4 +1,4 @@
-# Manifest — hapi-kit v1.6.0 (2026-11-20)
+# Manifest — hapi-kit v1.7.0 (2026-11-25)
 
 Prior inventions disclosed for use in company work. Each was developed before employment, on personal equipment and time.
 
@@ -22,6 +22,10 @@ Prior inventions disclosed for use in company work. Each was developed before em
 | weekly-gtm-review | Weekly go-to-market review and synthesis |
 | pipeline-stage-velocity-analyzer | Analyze pipeline stage conversion and velocity |
 | ok-i-love-you-goodbye | Session close: append a work log entry; weekly rollup |
+| viz-advisor | Choose the right chart for the data and the question, with the reasoning |
+| chart-build | Build a chart from a brief using chart-family rules and brand tokens |
+| chart-qa | Grade a chart against a perception and honesty checklist before it ships |
+| chart-to-client-delivery | Package a chart as standalone HTML with an insight-led message |
 
 ## Added after employment start
 
